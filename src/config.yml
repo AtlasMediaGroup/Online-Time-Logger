@@ -1,0 +1,16 @@
+backup-enabled: true
+backup-after-seconds: 60
+# 0 = backup only players with permission
+# 1 = backup only players without permission
+# Permission: onlinetimelogger.backup
+backup-type: 0 
+show-messages: true
+
+mysql:
+  enabled: false
+  server: localhost
+  port: 3306
+  user: root
+  password: "******"
+  db: minecraft
+  prefix: OTL_

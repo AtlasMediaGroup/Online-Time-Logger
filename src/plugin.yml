@@ -1,0 +1,8 @@
+name: OnlineTimeLogger
+main: me.RyanWild.OnlineTimeLogger
+version: 2.0
+commands:
+   otl:
+      description:
+      usage: 
+      aliases:

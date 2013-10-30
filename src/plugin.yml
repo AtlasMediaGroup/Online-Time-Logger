@@ -1,6 +1,6 @@
 name: OnlineTimeLogger
 main: me.RyanWild.OnlineTimeLogger.OnlineTimeLogger
-version: 2.0
+version: 2.2
 commands:
    otl:
       description:

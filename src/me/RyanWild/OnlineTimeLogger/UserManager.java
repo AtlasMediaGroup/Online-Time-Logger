@@ -46,7 +46,6 @@ public class UserManager
                 }
                 catch (IOException e)
                 {
-                    e.printStackTrace();
                 }
             }
         }

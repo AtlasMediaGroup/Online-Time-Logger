@@ -4,7 +4,7 @@ backup-after-seconds: 60
 # 1 = backup only players without permission
 # Permission: onlinetimelogger.backup
 backup-type: 0 
-show-messages: true
+show-messages: false
 
 mysql:
   enabled: false

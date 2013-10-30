@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -94,6 +95,7 @@ public final class OnlineTimeLogger extends JavaPlugin
         }, 0L, 20L);
     }
 
+    @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
     {
         if ((cmd.getName().equalsIgnoreCase("otl")) && (sender.hasPermission("onlinetimelogger.admin")))
@@ -135,9 +137,10 @@ public final class OnlineTimeLogger extends JavaPlugin
         return true;
     }
 
+    @Override
     public void onDisable()
     {
-        getLogger().info(getDescription().getVersion() + " has been disabled.");
+        getLogger().log(Level.INFO, "{0} has been disabled.", getDescription().getVersion());
     }
 
     public void prepareUser(String name)

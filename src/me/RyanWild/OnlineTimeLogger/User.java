@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
+import java.util.logging.Level;
 import org.bukkit.entity.Player;
 
 public class User
@@ -54,7 +55,7 @@ public class User
     {
         if (OnlineTimeLogger.instance.getConfig().getBoolean("show-messages"))
         {
-            OnlineTimeLogger.instance.getLogger().info("Backing up " + this.username);
+            OnlineTimeLogger.instance.getLogger().log(Level.INFO, "Backing up {0}", this.username);
         }
 
         Date d1 = new Date(getCountingFrom());
